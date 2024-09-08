@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="companyArray">
+        <item>Vichy</item>
+        <item>L\'Oréal</item>
+    </string-array>
+
+
+    <string-array name="Vichy_products">
+        <item>Capital Soliel SPF 50 plus </item>
+        <item>Product B</item>
+    </string-array>
+
+    <string-array name="LOréal_products">
+        <item>Product C</item>
+        <item>Product D</item>
+    </string-array>
+</resources>

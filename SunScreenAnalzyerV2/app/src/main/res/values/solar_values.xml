@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- E11 values -->
+    <string-array name="Amiloxate">
+        <item>290,831.6062176165804</item>
+        <item>295,883.419689119171</item>
+        <item>300,922.2797927461139</item>
+        <item>305,955.9585492227978</item>
+        <item>310,984.4559585492227</item>
+        <item>315,917.098445595855</item>
+        <item>320,782.3834196891191</item>
+        <item>325,562.1761658031088</item>
+        <item>330,365.2849740932642</item>
+        <item>335,186.52849740932643</item>
+        <item>340,95.85492227979276</item>
+        <item>345,44.041450777202115</item>
+        <item>350,10.362694300518172</item>
+        <item>355,2.590673575129543</item>
+        <item>360,2.590673575129543</item>
+        <item>365,2.590673575129543</item>
+        <item>370,2.590673575129543</item>
+        <item>375,2.590673575129543</item>
+        <item>380,2.590673575129543</item>
+        <item>385,2.590673575129543</item>
+        <item>390,2.590673575129543</item>
+        <item>395,2.590673575129543</item>
+        <item>400,2.590673575129543</item>
+    </string-array>
+
+    <string-array name="Padimate_O">
+        <item>290,590.2061855670103</item>
+        <item>295,652.0618556701031</item>
+        <item>300,713.9175257731958</item>
+        <item>305,770.6185567010309</item>
+        <item>310,827.319587628866</item>
+        <item>315,881.4432989690721</item>
+        <item>320,930.4123711340206</item>
+        <item>325,966.4948453608248</item>
+        <item>330,984.5360824742269</item>
+        <item>335,966.4948453608248</item>
+        <item>340,920.1030927835052</item>
+        <item>345,842.7835051546392</item>
+        <item>350,739.6907216494845</item>
+        <item>355,641.7525773195875</item>
+        <item>360,525.7731958762887</item>
+        <item>365,420.10309278350513</item>
+        <item>370,306.70103092783506</item>
+        <item>375,193.29896907216494</item>
+        <item>380,103.0927835051546</item>
+        <item>385,48.9690721649485</item>
+        <item>390,23.19587628865982</item>
+        <item>395,10.309278350515427</item>
+        <item>400,2.577319587628857</item>
+    </string-array>
+
+    <string-array name="Titanium_Dioxide">
+        <item>290,492.2480620155039</item>
+        <item>295,488.37209302325584</item>
+        <item>300,472.86821705426365</item>
+        <item>305,449.6124031007752</item>
+        <item>310,422.48062015503876</item>
+        <item>315,383.72093023255815</item>
+        <item>320,344.9612403100775</item>
+        <item>325,306.2015503875969</item>
+        <item>330,251.93798449612405</item>
+        <item>335,209.3023255813954</item>
+        <item>340,170.54263565891475</item>
+        <item>345,143.41085271317831</item>
+        <item>350,120.15503875968992</item>
+        <item>355,100.77519379844968</item>
+        <item>360,81.39534883720928</item>
+        <item>365,73.64341085271326</item>
+        <item>370,58.13953488372087</item>
+        <item>375,46.51162790697683</item>
+        <item>380,38.75968992248063</item>
+        <item>385,31.00775193798444</item>
+        <item>390,27.131782945736425</item>
+        <item>395,27.131782945736425</item>
+        <item>400,27.131782945736425</item>
+    </string-array>
+
+    <string-array name="Octinoxate">
+        <item>290,669.250645994832</item>
+        <item>295,720.9302325581394</item>
+        <item>300,759.6899224806202</item>
+        <item>305,788.1136950904393</item>
+        <item>310,806.2015503875969</item>
+        <item>315,751.937984496124</item>
+        <item>320,604.6511627906976</item>
+        <item>325,475.45219638242895</item>
+        <item>330,299.74160206718346</item>
+        <item>335,155.03875968992253</item>
+        <item>340,64.59948320413433</item>
+        <item>345,23.255813953488413</item>
+        <item>350,7.751937984496138</item>
+        <item>355,7.751937984496138</item>
+        <item>360,7.751937984496138</item>
+        <item>365,7.751937984496138</item>
+        <item>370,7.751937984496138</item>
+        <item>375,7.751937984496138</item>
+        <item>380,7.751937984496138</item>
+        <item>385,7.751937984496138</item>
+        <item>390,7.751937984496138</item>
+        <item>395,7.751937984496138</item>
+        <item>400,7.751937984496138</item>
+    </string-array>
+
+
+    <string-array name="Octocrylene">
+        <item>290,327.3195876288659</item>
+        <item>295,342.78350515463916</item>
+        <item>300,358.24742268041234</item>
+        <item>305,353.0927835051546</item>
+        <item>310,340.2061855670103</item>
+        <item>315,317.0103092783505</item>
+        <item>320,283.50515463917526</item>
+        <item>325,244.84536082474227</item>
+        <item>330,201.0309278350515</item>
+        <item>335,157.2164948453608</item>
+        <item>340,113.40206185567014</item>
+        <item>345,77.31958762886593</item>
+        <item>350,54.12371134020621</item>
+        <item>355,36.08247422680411</item>
+        <item>360,10.309278350515427</item>
+        <item>365,7.7319587628865705</item>
+        <item>370,7.7319587628865705</item>
+        <item>375,7.7319587628865705</item>
+        <item>380,7.7319587628865705</item>
+        <item>385,7.7319587628865705</item>
+        <item>390,7.7319587628865705</item>
+        <item>395,7.7319587628865705</item>
+        <item>400,7.7319587628865705</item>
+    </string-array>
+
+    <string-array name="Octisalate">
+        <item>290,99.99999999999997</item>
+        <item>295,151.2820512820513</item>
+        <item>300,179.4871794871795</item>
+        <item>305,189.74358974358972</item>
+        <item>310,187.17948717948718</item>
+        <item>315,156.4102564102564</item>
+        <item>320,112.82051282051286</item>
+        <item>325,66.66666666666666</item>
+        <item>330,23.076923076923105</item>
+        <item>335,7.692307692307665</item>
+        <item>340,7.692307692307665</item>
+        <item>345,7.692307692307665</item>
+        <item>350,7.692307692307665</item>
+        <item>355,7.692307692307665</item>
+        <item>360,7.692307692307665</item>
+        <item>365,7.692307692307665</item>
+        <item>370,7.692307692307665</item>
+        <item>375,7.692307692307665</item>
+        <item>380,7.692307692307665</item>
+        <item>385,7.692307692307665</item>
+        <item>390,7.692307692307665</item>
+        <item>395,7.692307692307665</item>
+        <item>400,7.692307692307665</item>
+    </string-array>
+
+
+    <string-array name="polysilicone_15">
+        <item>290,113.1</item>
+        <item>295,136.2</item>
+        <item>300,146.5</item>
+        <item>305,161.9</item>
+        <item>310,179.9</item>
+        <item>315,174.8</item>
+        <item>320,154.2</item>
+        <item>325,133.6</item>
+        <item>330,97.6</item>
+        <item>335,64.2</item>
+        <item>340,35.9</item>
+        <item>345,25.7</item>
+        <item>350,5.14</item>
+        <item>355,2.6</item>
+        <item>360,2.6</item>
+        <item>365,2.6</item>
+        <item>370,2.6</item>
+        <item>375,2.6</item>
+        <item>380,2.6</item>
+        <item>385,2.6</item>
+        <item>390,2.6</item>
+        <item>395,2.6</item>
+        <item>400,2.6</item>
+    </string-array>
+
+    <string-array name="Homosalate">
+        <item>290,89.74358974358975</item>
+        <item>295,128.2051282051282</item>
+        <item>300,158.97435897435898</item>
+        <item>305,169.2307692307692</item>
+        <item>310,161.53846153846152</item>
+        <item>315,128.2051282051282</item>
+        <item>320,99.99999999999997</item>
+        <item>325,53.846153846153875</item>
+        <item>330,17.948717948717995</item>
+        <item>335,2.564102564102555</item>
+        <item>340,2.564102564102555</item>
+        <item>345,2.564102564102555</item>
+        <item>350,2.564102564102555</item>
+        <item>355,5.12820512820511</item>
+        <item>360,5.12820512820511</item>
+        <item>365,5.12820512820511</item>
+        <item>370,5.12820512820511</item>
+        <item>375,5.12820512820511</item>
+        <item>380,5.12820512820511</item>
+        <item>385,5.12820512820511</item>
+        <item>390,5.12820512820511</item>
+        <item>395,5.12820512820511</item>
+        <item>400,5.12820512820511</item>
+    </string-array>
+
+    <!-- ################### -->
+    <!-- UVB / UVA-2 filters -->
+    <!-- ################### -->
+    <string-array name="Octyltriazone">
+        <item>290,836.0</item>
+        <item>295,1048.8</item>
+        <item>300,1303.3</item>
+        <item>305,1406.0</item>
+        <item>310,1444.0</item>
+        <item>315,1375.6</item>
+        <item>320,843.6</item>
+        <item>325,323.0</item>
+        <item>330,68.4</item>
+        <item>335,11.4</item>
+        <item>340,7.6</item>
+        <item>345,7.6</item>
+        <item>350,7.6</item>
+        <item>355,7.6</item>
+        <item>360,7.6</item>
+        <item>365,7.6</item>
+        <item>370,7.6</item>
+        <item>375,7.6</item>
+        <item>380,7.6</item>
+        <item>385,7.6</item>
+        <item>390,7.6</item>
+        <item>395,7.6</item>
+        <item>400,7.6</item>
+    </string-array>
+
+    <string-array name="Iscotrizinol">
+        <item>290,893.0</item>
+        <item>295,1128.6000000000001</item>
+        <item>300,1311.0</item>
+        <item>305,1387.0</item>
+        <item>310,1432.6000000000001</item>
+        <item>315,1451.6</item>
+        <item>320,1273.0</item>
+        <item>325,611.8</item>
+        <item>330,121.60000000000007</item>
+        <item>335,15.199999999999966</item>
+        <item>340,7.600000000000068</item>
+        <item>345,7.600000000000068</item>
+        <item>350,7.600000000000068</item>
+        <item>355,7.600000000000068</item>
+        <item>360,7.600000000000068</item>
+        <item>365,7.600000000000068</item>
+        <item>370,7.600000000000068</item>
+        <item>375,7.600000000000068</item>
+        <item>380,7.600000000000068</item>
+        <item>385,7.600000000000068</item>
+        <item>390,7.600000000000068</item>
+        <item>395,7.600000000000068</item>
+        <item>400,7.600000000000068</item>
+    </string-array>
+
+    <string-array name="Enzacamene">
+        <item>290,858.8</item>
+        <item>295,946.2</item>
+        <item>300,957.6</item>
+        <item>305,927.2</item>
+        <item>310,847.4</item>
+        <item>315,676.4000000000001</item>
+        <item>320,482.59999999999997</item>
+        <item>325,300.20000000000005</item>
+        <item>330,129.19999999999996</item>
+        <item>335,53.19999999999996</item>
+        <item>340,30.39999999999993</item>
+        <item>345,15.199999999999966</item>
+        <item>350,15.199999999999966</item>
+        <item>355,15.199999999999966</item>
+        <item>360,15.199999999999966</item>
+        <item>365,15.199999999999966</item>
+        <item>370,15.199999999999966</item>
+        <item>375,15.199999999999966</item>
+        <item>380,15.199999999999966</item>
+        <item>385,15.199999999999966</item>
+        <item>390,15.199999999999966</item>
+        <item>395,15.199999999999966</item>
+        <item>400,15.199999999999966</item>
+    </string-array>
+
+    <string-array name="Ensulizole">
+        <item>290,813.1999999999999</item>
+        <item>295,885.4</item>
+        <item>300,927.2</item>
+        <item>305,919.6</item>
+        <item>310,798.0000000000001</item>
+        <item>315,703.0</item>
+        <item>320,475.00000000000006</item>
+        <item>325,57.000000000000085</item>
+        <item>330,7.600000000000068</item>
+        <item>335,7.600000000000068</item>
+        <item>340,7.600000000000068</item>
+        <item>345,7.600000000000068</item>
+        <item>350,7.600000000000068</item>
+        <item>355,7.600000000000068</item>
+        <item>360,7.600000000000068</item>
+        <item>365,7.600000000000068</item>
+        <item>370,7.600000000000068</item>
+        <item>375,7.600000000000068</item>
+        <item>380,7.600000000000068</item>
+        <item>385,7.600000000000068</item>
+        <item>390,7.600000000000068</item>
+        <item>395,7.600000000000068</item>
+        <item>400,7.600000000000068</item>
+    </string-array>
+
+    <string-array name="Oxybenzone">
+        <item>290,615.6</item>
+        <item>295,516.8</item>
+        <item>300,440.8</item>
+        <item>305,406.5</item>
+        <item>310,402.8</item>
+        <item>315,414.2</item>
+        <item>320,421.0</item>
+        <item>325,406.5</item>
+        <item>330,387.6</item>
+        <item>335,357.1</item>
+        <item>340,315.4</item>
+        <item>345,262.0</item>
+        <item>350,197.0</item>
+        <item>355,136.0</item>
+        <item>360,83.0</item>
+        <item>365,49.0</item>
+        <item>370,30.0</item>
+        <item>375,11.4</item>
+        <item>380,11.4</item>
+        <item>385,11.4</item>
+        <item>390,11.4</item>
+        <item>395,11.4</item>
+        <item>400,11.4</item>
+    </string-array>
+
+    <string-array name="Sulisobenzone">
+        <item>290,433.19999999999993</item>
+        <item>295,361.00000000000006</item>
+        <item>300,311.6</item>
+        <item>305,285.00000000000006</item>
+        <item>310,281.19999999999993</item>
+        <item>315,288.8</item>
+        <item>320,288.8</item>
+        <item>325,292.59999999999997</item>
+        <item>330,285.00000000000006</item>
+        <item>335,262.20000000000005</item>
+        <item>340,220.39999999999992</item>
+        <item>345,182.39999999999992</item>
+        <item>350,133.00000000000009</item>
+        <item>355,91.19999999999996</item>
+        <item>360,60.80000000000003</item>
+        <item>365,38.0</item>
+        <item>370,19.000000000000085</item>
+        <item>375,7.600000000000068</item>
+        <item>380,7.600000000000068</item>
+        <item>385,7.600000000000068</item>
+        <item>390,7.600000000000068</item>
+        <item>395,7.600000000000068</item>
+        <item>400,7.600000000000068</item>
+    </string-array>
+
+    <!-- UVA-1 filters -->
+
+    <string-array name="Avobenzone">
+        <item>290,87.9</item>
+        <item>295,93.4</item>
+        <item>300,104.4</item>
+        <item>305,115.4</item>
+        <item>310,137.4</item>
+        <item>315,159.4</item>
+        <item>320,208.9</item>
+        <item>325,285.8</item>
+        <item>330,390.2</item>
+        <item>335,516.7</item>
+        <item>340,665.1</item>
+        <item>345,813.5</item>
+        <item>350,901.4</item>
+        <item>355,912.4</item>
+        <item>360,857.4</item>
+        <item>365,698.0</item>
+        <item>370,527.7</item>
+        <item>375,362.8</item>
+        <item>380,219.9</item>
+        <item>385,126.4</item>
+        <item>390,71.5</item>
+        <item>395,44.0</item>
+        <item>400,33.0</item>
+    </string-array>
+
+    <string-array name="Parsol_DHHB">
+        <item>290,192.4</item>
+        <item>295,225.4</item>
+        <item>300,269.3</item>
+        <item>305,335.3</item>
+        <item>310,428.7</item>
+        <item>315,533.2</item>
+        <item>320,654.1</item>
+        <item>325,753.0</item>
+        <item>330,813.5</item>
+        <item>335,824.5</item>
+        <item>340,813.5</item>
+        <item>345,736.5</item>
+        <item>350,632.1</item>
+        <item>355,522.2</item>
+        <item>360,384.8</item>
+        <item>365,247.3</item>
+        <item>370,120.9</item>
+        <item>375,49.5</item>
+        <item>380,5.5</item>
+        <item>385,5.5</item>
+        <item>390,5.5</item>
+        <item>395,5.5</item>
+        <item>400,5.5</item>
+    </string-array>
+
+    <string-array name="Mexoryl_SX">
+        <item>290.0,109.9</item>
+        <item>295.0,153.9</item>
+        <item>300.0,197.9</item>
+        <item>305.0,280.3</item>
+        <item>310.0,351.8</item>
+        <item>315.0,428.7</item>
+        <item>320.0,527.7</item>
+        <item>325.0,610.1</item>
+        <item>330.0,692.5</item>
+        <item>335.0,753.0</item>
+        <item>340.0,802.5</item>
+        <item>345.0,830.0</item>
+        <item>350.0,797.0</item>
+        <item>355.0,725.5</item>
+        <item>360.0,654.1</item>
+        <item>365.0,555.1</item>
+        <item>370.0,445.2</item>
+        <item>375.0,269.3</item>
+        <item>380.0,120.9</item>
+        <item>385.0,49.5</item>
+        <item>390.0,11.0</item>
+        <item>395.0,11.0</item>
+        <item>400.0,11.0</item>
+    </string-array>
+
+    <string-array name="Neo_Heliopan_AP">
+        <item>290.0,247.3</item>
+        <item>295.0,241.8</item>
+        <item>300.0,230.9</item>
+        <item>305.0,241.8</item>
+        <item>310.0,291.3</item>
+        <item>315.0,357.3</item>
+        <item>320.0,461.7</item>
+        <item>325.0,566.1</item>
+        <item>330.0,692.5</item>
+        <item>335.0,808.0</item>
+        <item>340.0,917.9</item>
+        <item>345.0,1033.3</item>
+        <item>350.0,1110.3</item>
+        <item>355.0,1143.3</item>
+        <item>360.0,1137.8</item>
+        <item>365.0,1049.8</item>
+        <item>370.0,917.9</item>
+        <item>375.0,808.0</item>
+        <item>380.0,637.6</item>
+        <item>385.0,335.3</item>
+        <item>390.0,153.9</item>
+        <item>395.0,60.5</item>
+        <item>400.0,22.0</item>
+    </string-array>
+
+    <string-array name="Merodimate">
+        <item>290,11.0</item>
+        <item>295,27.5</item>
+        <item>300,38.5</item>
+        <item>305,49.5</item>
+        <item>310,66.0</item>
+        <item>315,77.0</item>
+        <item>320,93.4</item>
+        <item>325,109.9</item>
+        <item>330,137.4</item>
+        <item>335,159.4</item>
+        <item>340,175.9</item>
+        <item>345,186.9</item>
+        <item>350,192.4</item>
+        <item>355,192.4</item>
+        <item>360,181.4</item>
+        <item>365,170.4</item>
+        <item>370,153.9</item>
+        <item>375,120.9</item>
+        <item>380,93.4</item>
+        <item>385,60.5</item>
+        <item>390,38.5</item>
+        <item>395,22.0</item>
+        <item>400,5.5</item>
+    </string-array>
+
+
+    <string-array name="Tinosorb_S">
+        <item>290,444.4</item>
+        <item>295,562.7</item>
+        <item>300,652.3</item>
+        <item>305,713.3</item>
+        <item>310,734.8</item>
+        <item>315,734.8</item>
+        <item>320,734.8</item>
+        <item>325,745.5</item>
+        <item>330,774.2</item>
+        <item>335,810.0</item>
+        <item>340,820.8</item>
+        <item>345,824.4</item>
+        <item>350,806.5</item>
+        <item>355,767.0</item>
+        <item>360,698.9</item>
+        <item>365,566.3</item>
+        <item>370,387.1</item>
+        <item>375,229.4</item>
+        <item>380,114.7</item>
+        <item>385,46.6</item>
+        <item>390,17.9</item>
+        <item>395,7.2</item>
+        <item>400,7.2</item>
+    </string-array>
+
+    <string-array name="Tinosorb_M">
+        <item>290,290.3</item>
+        <item>295,333.3</item>
+        <item>300,354.8</item>
+        <item>305,362.0</item>
+        <item>310,358.4</item>
+        <item>315,333.3</item>
+        <item>320,322.6</item>
+        <item>325,304.7</item>
+        <item>330,297.5</item>
+        <item>335,319.0</item>
+        <item>340,358.4</item>
+        <item>345,394.3</item>
+        <item>350,419.4</item>
+        <item>355,444.4</item>
+        <item>360,455.2</item>
+        <item>365,451.6</item>
+        <item>370,419.4</item>
+        <item>375,408.6</item>
+        <item>380,376.3</item>
+        <item>385,304.7</item>
+        <item>390,197.1</item>
+        <item>395,114.7</item>
+        <item>400,71.7</item>
+    </string-array>
+
+    <!-- Mexoryl_XL -->
+    <string-array name="Mexoryl_XL">
+        <item>2,240.1</item>
+        <item>2,286.7</item>
+        <item>3,311.8</item>
+        <item>3,308.2</item>
+        <item>3,286.7</item>
+        <item>3,276.0</item>
+        <item>3,258.1</item>
+        <item>3,258.1</item>
+        <item>379.6</item>
+        <item>3.0,290.3</item>
+        <item>3.0,297.5</item>
+        <item>3.0,297.5</item>
+        <item>3.0,279.6</item>
+        <item>3.0,254.5</item>
+        <item>3.0,207.9</item>
+        <item>3.0,147.0</item>
+        <item>3.0,111.1</item>
+        <item>375.0,71.7</item>
+        <item>380.0,35.8</item>
+        <item>385.0,14.3</item>
+        <item>390.0,3.6</item>
+        <item>395.0,3.6</item>
+        <item>400.0,3.6</item>
+    </string-array>
+
+    <string-array name="Zinc_Oxide">
+        <item>290,164.9</item>
+        <item>295,161.3</item>
+        <item>300,168.5</item>
+        <item>305,168.5</item>
+        <item>310,168.5</item>
+        <item>315,161.3</item>
+        <item>320,157.7</item>
+        <item>325,157.7</item>
+        <item>330,157.7</item>
+        <item>335,157.7</item>
+        <item>340,157.7</item>
+        <item>345,157.7</item>
+        <item>350,161.3</item>
+        <item>355,164.9</item>
+        <item>360,172.0</item>
+        <item>365,190.0</item>
+        <item>370,197.1</item>
+        <item>375,161.3</item>
+        <item>380,93.2</item>
+        <item>385,64.5</item>
+        <item>390,53.8</item>
+        <item>395,50.2</item>
+        <item>400,46.6</item>
+    </string-array>
+
+
+
+    <!-- titanium dioxide [nano] THIS SHOULD HAVE A WARNING -->
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="Capital_Soliel_SPF_50_plus">
+        <item> "HMS" </item>
+    </string-array>
+
+    <string-array name="Capital_Soliel_Ultra_Light_SPF_50">
+        <item> "HMS" </item>
+    </string-array>
+
+    <string-array name="LiftActive_Peptide_C_SPF_30">
+        <item> "HMS" </item>
+    </string-array>
+
+</resources>
+
+

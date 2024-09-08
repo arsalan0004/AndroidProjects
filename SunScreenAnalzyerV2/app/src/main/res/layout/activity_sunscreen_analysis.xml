@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".SunscreenAnalysisActivity">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/resultingSpectrumChart"
+        android:layout_width="319dp"
+        android:layout_height="246dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvActivityTitle">
+
+    </com.github.mikephil.charting.charts.LineChart>
+
+    <TextView
+        android:id="@+id/yAxisTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/resultingSpectrumChart"
+        android:layout_toStartOf="@id/resultingSpectrumChart"
+        android:rotation="-90"
+        android:text="Blockage %"
+        app:layout_constraintBottom_toBottomOf="@+id/resultingSpectrumChart"
+        app:layout_constraintTop_toTopOf="@+id/resultingSpectrumChart"
+        tools:layout_editor_absoluteX="10dp" />
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:rotation="-90"-->
+    <!--        android:text="Blockage %"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/resultingSpectrumChart"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/resultingSpectrumChart"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <TextView
+        android:id="@+id/tvBlockageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="This sunscreen blocks"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/resultingSpectrumChart"
+        app:layout_constraintTop_toTopOf="@+id/xAxisLabel" />
+
+    <TextView
+        android:id="@+id/tvIngredientsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Active Ingredients"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/resultingSpectrumChart"
+        app:layout_constraintTop_toBottomOf="@+id/tvBlockageInfo" />
+
+    <TextView
+        android:id="@+id/tvCuationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="219dp"
+        android:text="Ingredient Warnings"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/resultingSpectrumChart"
+        app:layout_constraintTop_toBottomOf="@+id/tvIngredients" />
+
+    <TextView
+        android:id="@+id/tvIngredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/resultingSpectrumChart"
+        app:layout_constraintTop_toBottomOf="@+id/tvIngredientsLabel"
+        tools:text="-Helium " />
+
+    <TextView
+        android:id="@+id/tvIngredientWarnings"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintStart_toStartOf="@+id/tvCuationTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvCuationTitle"
+        tools:text="Nothing to note 😊" />
+
+    <TextView
+        android:id="@+id/tvActivityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Analysis for Banana Boat 60 SPF sunscreen" />
+
+    <TextView
+        android:id="@+id/xAxisLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wavelength (nm)"
+        app:layout_constraintEnd_toEndOf="@+id/resultingSpectrumChart"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/resultingSpectrumChart"
+        app:layout_constraintTop_toBottomOf="@+id/resultingSpectrumChart" />
+
+    <TextView
+        android:id="@+id/tvBlockageInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- 337% of UVA rays \n - 440% of UVB rays "
+        app:layout_constraintStart_toStartOf="@+id/tvBlockageTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvBlockageTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
