@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -21,6 +22,7 @@ import com.example.sunscreenanalzyerv2.allIngredients
 val TAG = "Main Activity"
 val MAX_INGREDIENTS = 6
 
+// make X button work, removing input
 
 class MainActivity : AppCompatActivity() {
 
@@ -77,6 +79,8 @@ class MainActivity : AppCompatActivity() {
         // get reference to warning
         warningLabel = findViewById(R.id.tv_warning)
 
+        // references to 'x' button for added ingredients
+
         // make add button clickable
         addButton.setOnClickListener {
             addRow()
@@ -125,6 +129,16 @@ class MainActivity : AppCompatActivity() {
 
         // reset all warnings from previous iteration
         resetMainPageSettings()
+
+        // confirm that the same ingredient wasn't added twice
+        val addedIngredientsSet = addedIngredients.toSet()
+
+        if(addedIngredientsSet.size < addedIngredients.size){
+            warningLabel.text = "Enter ingredients only once."
+            warningLabel.setBackgroundColor(0xFFFF0000.toInt())
+            warningLabel.setTextColor(0xFFFFFFFF.toInt())
+            return // exit function without sumitting
+        }
 
         // check that all ingredients are valid, and that their incorperation is in range (0-100)
         // ======================================================================================
@@ -213,6 +227,18 @@ class MainActivity : AppCompatActivity() {
 
         // get reference to the incorperation percent
         val new_ingredientIncorp = newRow.findViewById<EditText>(R.id.tv_ingIncorp)
+
+        // get reference to the 'x' button
+        val closeButton = newRow.findViewById<ImageView>(R.id.image_CancelItem)
+
+        // set x button to remove the row when it is clicked
+        closeButton.setOnClickListener{
+            // remove the row
+            addSpace.removeView(newRow)
+
+            // remove the ingredient name and the reference from the list
+            addedIngredients.remove(Pair(new_ingredientName, new_ingredientIncorp))
+        }
 
         // add ingredient and its incorperation to the reference list
         addedIngredients.add(Pair(new_ingredientName, new_ingredientIncorp))
