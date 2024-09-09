@@ -22,7 +22,7 @@ import com.example.sunscreenanalzyerv2.allIngredients
 val TAG = "Main Activity"
 val MAX_INGREDIENTS = 6
 
-// make X button work, removing input
+// MEXORYL bug first ingredient
 
 class MainActivity : AppCompatActivity() {
 
@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
     var num_ingredients = 1
 
     // reference to all the ingredient labels
-    var addedIngredients = ArrayList<Pair<AutoCompleteTextView, TextView>>()
+    var rows = ArrayList<Pair<AutoCompleteTextView, TextView>>()
 
     // button to add ingredients
     lateinit var addButton : Button
@@ -47,7 +47,17 @@ class MainActivity : AppCompatActivity() {
     // warning label that notifies user about issues
     lateinit var warningLabel : TextView
 
+    override fun onBackPressed(){
 
+        // clear all ingredients added to the list
+        rows.clear()
+
+        // reset the warnings on the page
+        resetMainPageSettings()
+
+        super.onBackPressed()
+
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -91,6 +101,9 @@ class MainActivity : AppCompatActivity() {
             submitIngredients()
         }
 
+        // add the first, default, ingredient
+        rows.add(Pair(firstIngredientName, firstIngredientIncorp))
+
 
     }
 
@@ -114,7 +127,7 @@ class MainActivity : AppCompatActivity() {
     private fun resetMainPageSettings(){
 
         // reset all the ingredients and incorperations color schemes
-        for ((name, incorp) in addedIngredients){
+        for ((name, incorp) in rows){
             name.setHintTextColor(0x80808080.toInt())
             name.setTextColor(0xFF000000.toInt())
             incorp.setTextColor(0xFF000000.toInt())
@@ -124,16 +137,19 @@ class MainActivity : AppCompatActivity() {
 
     private fun submitIngredients() {
 
-        // add the first, default, ingredient
-        addedIngredients.add(Pair(firstIngredientName, firstIngredientIncorp))
-
         // reset all warnings from previous iteration
         resetMainPageSettings()
 
         // confirm that the same ingredient wasn't added twice
-        val addedIngredientsSet = addedIngredients.toSet()
+        // ===================================================
+        val rowsSet = rows.toSet()
 
-        if(addedIngredientsSet.size < addedIngredients.size){
+        if(rowsSet.size < rows.size){
+
+            for ((n, i) in rows){
+                Log.i(TAG, "name: ${n.text.toString()} incorp: ${i.text.toString()}")
+            }
+
             warningLabel.text = "Enter ingredients only once."
             warningLabel.setBackgroundColor(0xFFFF0000.toInt())
             warningLabel.setTextColor(0xFFFFFFFF.toInt())
@@ -143,7 +159,8 @@ class MainActivity : AppCompatActivity() {
         // check that all ingredients are valid, and that their incorperation is in range (0-100)
         // ======================================================================================
 
-        for ((name, incorp) in addedIngredients){
+        for ((name, incorp) in rows){
+            Log.i(TAG, "testing ${name.text.toString()}, ${incorp.text.toString()}")
 
             var incorpNum = 1000f // set value to fail
             var incorpImpossible = false
@@ -180,11 +197,7 @@ class MainActivity : AppCompatActivity() {
                 warningLabel.setTextColor(0xFFFFFFFF.toInt())
                 return // exit function without sumitting
             }
-
         }
-
-
-        // check if ingredients belong to available set
 
 
         // read all the names of ingredients, and prepare to send them to the //
@@ -193,13 +206,14 @@ class MainActivity : AppCompatActivity() {
         val bundle = Bundle()
 
         // add one because of the default ingredient
-        bundle.putString("numItems", (addedIngredients.size).toString())
+        bundle.putString("numItems", (rows.size).toString())
 
         var currItem : Int = 0
-        for((ingredientLabel, ingredientIncorperation) in addedIngredients){
+        for((ingredientLabel, ingredientIncorperation) in rows){
 
             bundle.putString("ingredient_n $currItem", ingredientLabel.text.toString())
             bundle.putString("ingredient_i $currItem", ingredientIncorperation.text.toString())
+            Log.i(TAG, "sending ${ingredientLabel.text.toString()} ${ingredientIncorperation.text.toString()}")
             currItem +=1
         }
 
@@ -237,11 +251,11 @@ class MainActivity : AppCompatActivity() {
             addSpace.removeView(newRow)
 
             // remove the ingredient name and the reference from the list
-            addedIngredients.remove(Pair(new_ingredientName, new_ingredientIncorp))
+            rows.remove(Pair(new_ingredientName, new_ingredientIncorp))
         }
 
         // add ingredient and its incorperation to the reference list
-        addedIngredients.add(Pair(new_ingredientName, new_ingredientIncorp))
+        rows.add(Pair(new_ingredientName, new_ingredientIncorp))
 
         // add to the space
         addSpace.addView(newRow)

@@ -571,7 +571,7 @@ class SunscreenAnalysisActivity : AppCompatActivity() {
 
                     outputString += " This sunscreen has ${badAvobenzoneStabilizersFound[0]}" +
                             " which is a moderately poor stabilizer of Avobenzone."  +
-                            "We strongly suggest you consider using a different sunscreen"
+                            "We strongly suggest you consider using a different sunscreen."
 
                 } else if (badAvobenzoneStabilizersFound.size > 1) {
 
@@ -587,12 +587,12 @@ class SunscreenAnalysisActivity : AppCompatActivity() {
                     }
                     outputString += " which are poor stabilizers of Avobenzone. Together, they may" +
                             "be sufficient to stabilize Avobezone, but we suggest you consider using " +
-                            "a different sunscreen"
+                            "a different sunscreen."
                 }
 
                 else if(badAvobenzoneStabilizersFound.size == 0){
                     outputString += " This sunscreen contains no known stabilizers. We strongly" +
-                            "suggest you consider using a different sunscreen"
+                            "suggest you consider using a different sunscreen."
                 }
             }
 
