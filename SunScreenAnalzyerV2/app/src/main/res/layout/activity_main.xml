@@ -7,11 +7,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- contains all the ingredients -->
+
     <LinearLayout
         android:id="@+id/layout_first_ingredient"
-        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent">
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_mascot">
 
         <AutoCompleteTextView
             android:id="@+id/tv_ingredient1"
@@ -19,22 +23,38 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:hint="ex. Avobenzone"
-            />
+            android:hint="ex. Avobenzone" />
 
         <EditText
             android:id="@+id/tv_ing1Incorp"
             android:layout_width="49dp"
             android:layout_height="46dp"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
             android:ems="10"
             android:hint="10.0"
-            android:layout_marginTop="10dp"
-            android:inputType="numberDecimal"
-            />
+            android:inputType="numberDecimal" />
     </LinearLayout>
 
-    <!-- contains all the ingredients -->
+    <ImageView
+        android:id="@+id/image_mascot"
+        android:layout_width="256dp"
+        android:layout_height="232dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_mascot3"
+        tools:layout_editor_absoluteY="6dp" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="85dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="ADD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_list" />
+
     <LinearLayout
         android:id="@+id/layout_list"
         android:orientation="vertical"
@@ -42,16 +62,6 @@
         android:layout_width="match_parent"
         app:layout_constraintTop_toBottomOf="@+id/layout_first_ingredient"
         ></LinearLayout>
-
-    <Button
-        android:id="@+id/add_button"
-        android:layout_width="85dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="16dp"
-        android:text="ADD"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layout_list"
-         />
 
     <Button
         android:id="@+id/button_submit"
